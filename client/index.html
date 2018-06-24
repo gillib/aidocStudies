@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aidoc Hello World</title>
+
+    <!--fix jquery-->
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+
+    <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+<form id="getImageBySeriesIdForm">
+    <label for="seriesId">Series Id</label>
+    <input type="text" name="seriesId" id="seriesId">
+    <button type="submit">Get Image</button>
+</form>
+<form id="getMetadataByStudyIdForm">
+    <label for="studyId">Study Id</label>
+    <input type="text" name="studyId" id="studyId">
+    <button type="submit">Get Study Metadata</button>
+</form>
+<pre id="metadataJSON"></pre>
+</body>
+</html>
